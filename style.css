@@ -22,11 +22,16 @@ p {
 #darwin {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    padding-top: 35px;
 }
 
 #remy {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
+video {
+    max-width: 350px;
+}
