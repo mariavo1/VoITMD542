@@ -21,8 +21,12 @@ p {
 
 #darwin {
     display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 #remy {
     display: flex;
+    justify-content: center;
 }
+
