@@ -11,3 +11,8 @@ const loadData = () => {
         db.set(element[0], element[1])
     });
 };
+
+const saveData = () => {
+    const stringifyData  = JSON.stringify(Array.from(db));
+    fs.writeFileSync(path.join(__dirname , '../data/contact.json'), stringifyData);
+};
