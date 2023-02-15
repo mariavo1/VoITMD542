@@ -10,4 +10,9 @@ router.get('/', function(req, res, next) {
   res.render('contact', { title: 'Contact Database' });
 });
 
+/* Get Contact_Add */
+router.get('/add', function(req, res, next) {
+  res.render('contact_add', { title: 'Add a Contact' });
+});
+
 module.exports = router;
