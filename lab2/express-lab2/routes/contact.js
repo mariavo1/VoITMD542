@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const contactsRepo = require('../src/contactRepo');
+const contactsRepo = require('../src/contactsRepo');
 const contactsFileRepo = require('../src/contactsFileRepository');
 
 /* GET users listing. */

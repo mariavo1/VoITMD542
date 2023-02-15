@@ -28,7 +28,7 @@ const repo = {
         saveData();
     },
     deleteById: (uuid) => {
-        db.delete(uuid)
+        db.delete(uuid);
         saveData();
     },
     update: (contact) => {
