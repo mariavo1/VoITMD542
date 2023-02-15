@@ -8,7 +8,8 @@ const loadData = () => {
     const jsonData = fs.readFileSync(path.join(__dirname , '../data/contact.json'));
     const contactArray = JSON.parse(jsonData);
     contactArray.forEach(element => {
-        db.set(element[0], element[1])
+        const aContact = new Contact(element[1].id, element[1].firstName, element[1].lastName, element[1].email, element[1].notes,element[1].date);
+        db.set(aContact.id, aContact);
     });
 };
 

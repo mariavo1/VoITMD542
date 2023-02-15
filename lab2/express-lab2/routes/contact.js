@@ -7,7 +7,7 @@ const contactsFileRepo = require('../src/contactsFileRepository');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   const data = contactsFileRepo.findAll();
-  res.render('contact', { title: 'Contact Database' });
+  res.render('contact', { title: 'Contact Database', contact : data });
 });
 
 /* Get Contact_Add */
