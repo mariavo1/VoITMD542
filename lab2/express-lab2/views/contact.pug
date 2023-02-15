@@ -5,5 +5,14 @@ block content
   p Welcome to #{title}
   hr
   a(href='/contact/add') Add Contact 
-  
+  if contact.length > 0
+    ul  
+      each val in contacts 
+        li  
+          p First Name : #{val.firstName}
+          p Last Name: #{val.lastName}
+          p Email: #{val.email}
+          p Notes: #{val.notes}
+          p Date: #{val.date}
+
 
