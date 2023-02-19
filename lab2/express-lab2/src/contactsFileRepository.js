@@ -11,7 +11,6 @@ const loadData = () => {
     });
 };
 
-
 const saveData = () => {
     const stringifyData  = JSON.stringify(Array.from(db));
     fs.writeFileSync(path.join(__dirname , '../data/contact.json'), stringifyData);

@@ -11,23 +11,18 @@ block content
 
         form(method='POST', action='/contact/add')
             label First Name:
-        |
                 input(type = 'text', name='firstName', placeholder = 'First Name')
         br
             label Last Name: 
-        |
                 input(type = 'text', name='lastName', placeholder = 'Last Name')
         br 
             label Email: 
-        |
                 input(type = 'email', name='email', placeholder = 'Email')
         br
             label Notes 
-        |
                 textarea(name ='notes', placeholder = 'Notes')
         br
             button(type = 'submit') Submit 
-        |
         a(href='/contact') Cancel
-//        
+     
 
