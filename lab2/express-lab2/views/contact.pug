@@ -6,13 +6,23 @@ block content
   hr
   a(href='/contact/add') Add Contact 
   if contact.length > 0
-    ul  
-      each val in contacts 
-        li  
-          p First Name : #{val.firstName}
-          p Last Name: #{val.lastName}
-          p Email: #{val.email}
-          p Notes: #{val.notes}
-          p Date: #{val.date}
+    table 
+      thead   
+        tr 
+          th First Name 
+          th Last Name 
+          th Email 
+          th Notes
+        tbody 
+          each value in contact 
+            tr 
+              td= value.firstName 
+              td= value.lastName
+              td= value.email
+              td 
+                a(href=`/contact/${value.id}`)= 'View Contact '
+                a(href=`/contact/${value.id}/edit`)= 'Edit Contact '
+                a(href=`/contact/${value.id}/delete`)= 'Delete Contact'
+
 
 
